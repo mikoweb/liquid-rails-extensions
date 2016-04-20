@@ -27,7 +27,7 @@ Url filter - provides absolute path.
 {{ 'root'|url }}
 
 # It will render http://mydomain.com/my-path/foo/bar
-{{ 'my_route'|ur;: 'foo', 'bar' }}
+{{ 'my_route'|url: 'foo', 'bar' }}
 ```
 
 ERB block - execute and render ERB code
