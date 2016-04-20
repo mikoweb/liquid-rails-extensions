@@ -45,3 +45,4 @@ ERB block - execute and render ERB code
 This gem is an extension of Liquid-Rails. It's depends on `'liquid4-blocks', '~> 0.7.0'`.
 
 - [Liquid-Rails](https://github.com/mikoweb/liquid4-rails)
+- [Liquid Templating Engine](https://shopify.github.io/liquid/)
