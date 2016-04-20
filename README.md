@@ -2,7 +2,7 @@
 
 Gemfile
 
-    gem 'liquid-rails-extensions', '~> 0.0.3'
+    gem 'liquid-rails-extensions', '~> 0.0.4'
 
 config/initializers/liquid_template_handler.rb
 
@@ -28,6 +28,13 @@ Url filter - provides absolute path.
 
 # It will render http://mydomain.com/my-path/foo/bar
 {{ 'my_route'|url: 'foo', 'bar' }}
+```
+
+JSON filter - to parse a JSON string
+```html
+{% assign object = '{"foo": "bar"}'|json_parse %}
+# It will render 'bar'
+{{ object.foo }}
 ```
 
 ERB block - execute and render ERB code
